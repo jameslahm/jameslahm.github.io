@@ -26,7 +26,7 @@ pinterest: # Add your Pinterest handle
 mailchimp: # Add your MailChimp form identifier.
 
 # Disqus
-discus_identifier: mr-brown # Add your discus identifier
+discus_identifier: '01a4d26bd94c98378e5bef99b56a4e43' # Add your discus identifier
 
 # Tracker
 analytics: # Google Analytics
