@@ -1,0 +1,52 @@
+I"N<p>First, download the source code</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://nginx.org/download/nginx-1.9.9.tar.gz
+</code></pre></div></div>
+<p>Attention:here, you can choose the version of nginx according to your need</p>
+
+<p>Then, unzip the file</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tar -zxvf nginx-1.9.9.tar.gz
+</code></pre></div></div>
+
+<p>You wil find a new dir named “nginx-1.9.9” in your current dir</p>
+
+<p>Then, compile and install</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd nginx-1.9.9 #change current dir
+
+# configure
+./configure --with=http_ssl_module --prefix=/usr/local/nginx
+
+# the prefix `/usr/local/nginx` means the install path where you want to place nginx. Thus, you are free to choose this, but usually the prefix is `/usr/local/nginx`
+
+# complie and install
+make 
+make install
+</code></pre></div></div>
+
+<p>Do some test</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /usr/local/nginx/bin
+
+# start nginx
+nginx
+</code></pre></div></div>
+<p>if normal, Congratulations!</p>
+
+<p>Hold on, there are some questions you may encounter</p>
+
+<ul>
+  <li>
+    <p><strong>openssl compile error</strong></p>
+
+    <p>This is beacuse the verison of openssl is not compatible. Nginx prefers openssl with the version 1.1 below. if that happened, try to compile nginx with openssl source code</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://www.openssl.org/source/openssl-1.0.2d.tar.gz
+tar -zxcf openssl-1.0.2d.tar.gz
+</code></pre></div>    </div>
+    <p>Then when compile nginx,</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure --with=http_ssl_module --prefix=/usr/local/nginx --with-openssl=path/to/openssl-source
+# please replace `path/to/openssl-source` with your real path
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>If there any question, I’m pleased to see that in the comment area and reply you</p>
+
+:ET
