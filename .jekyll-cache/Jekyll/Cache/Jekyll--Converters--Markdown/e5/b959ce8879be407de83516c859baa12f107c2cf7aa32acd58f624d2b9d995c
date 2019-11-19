@@ -1,0 +1,85 @@
+I"�
+<h2 id="batch-normalization">Batch Normalization</h2>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">popular belief</code>:</p>
+
+    <p><em>controlling</em> the change of the layers’ input distributions during training to reduce the so-called “internal covariate shift”</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">truth</code>:</p>
+
+    <p><em>makes</em> the optimization landscape signiﬁcantly smoother, inducing a more predictive and stable behavior of the gradients, allowing for faster training.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h4 id="ics">ICS</h4>
+
+<ul>
+  <li><em>ICS</em> refers to the change in the distribution of layer inputs caused by updates to the preceding layers.</li>
+  <li><em>conjectured</em> that such continual change negatively impacts training.</li>
+  <li><em>BatchNorm</em> might not even be reducing internal covariate shift.</li>
+</ul>
+
+<hr />
+
+<h4 id="impact">Impact</h4>
+
+<ul>
+  <li><em>makes</em> the landscape of the corresponding optimization problem signiﬁcantly more smooth</li>
+  <li><em>gradients</em> are more predictive and thus allows for use of larger range of learning rates and faster network convergence</li>
+  <li><em>under</em> natural conditions, the <code class="highlighter-rouge">Lipschitzness</code> of both the loss and the gradients  are improved in models with BatchNorm</li>
+</ul>
+
+<hr />
+
+<h4 id="controlling-internal-covariate-shift">controlling internal covariate shift?</h4>
+
+<ul>
+  <li><em>train</em> networks with random noise injected after BatchNorm layers. Speciﬁcally, we perturb each activation for each sample in the batch using i.i.d. noise sampled from a non-zero mean and non-unit variance distribution</li>
+  <li><em>visualizes</em> the training behavior of standard, BatchNorm and “noisy” BatchNorm networks</li>
+</ul>
+
+<hr />
+
+<p><img src="./../assets/img/paper/BN/1.jpg" alt="" /></p>
+
+<hr />
+
+<h4 id="batchnorm-increase-ics">BatchNorm Increase ICS</h4>
+
+<p><img src="./../assets/img/paper/BN/2.jpg" alt="" /></p>
+
+<hr />
+
+<p><img src="./../assets/img/paper/BN/3.jpg" alt="" /></p>
+
+<hr />
+
+<h4 id="the-smoothing-effect-of-batchnorm">The smoothing effect of BatchNorm</h4>
+
+<ul>
+  <li><em>non-BatchNorm</em>, deep neural network, the loss function tends to have a large number of “kinks”</li>
+  <li><em>makes</em> the gradients more reliable and predictive, enables any (gradient–based) training algorithm to take larger steps</li>
+</ul>
+
+<hr />
+
+<p><img src="./../assets/img/paper/BN/4.jpg" alt="" /></p>
+
+<hr />
+
+<p>$L_{p}-Normalization$</p>
+
+<ul>
+  <li><em>normalizes</em> them by the average of their <code class="highlighter-rouge">p-norm </code></li>
+</ul>
+
+<p><img src="./../assets/img/paper/BN/5.jpg" alt="" /></p>
+
+<hr />
+
+:ET
