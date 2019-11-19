@@ -61,6 +61,7 @@ GEM
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.6.0)
+    wdm (0.1.1)
 
 PLATFORMS
   x64-mingw32
@@ -70,6 +71,7 @@ DEPENDENCIES
   jekyll-feed
   jekyll-paginate
   jekyll-sitemap
+  wdm (>= 0.1.0)
 
 BUNDLED WITH
    1.17.2

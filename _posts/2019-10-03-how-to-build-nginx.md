@@ -4,7 +4,7 @@ title:  How to build nginx
 date:   2019-10-03 13:32:20 +0800
 description: How to build nginx with the source code
 # Add post description (optional)
-img: post-7.jpg # Add image post (optional)
+img: post-1.jpg # Add image post (optional)
 tags: [Nginx, Build]
 author: Jameslahm # Add name author (optional)
 ---
