@@ -5,6 +5,7 @@ description: Detailed Travis-CI tutorial
 # Add post description (optional)
 tags: [CI, Tutorial]
 author: Jameslahm # Add name author (optional)
+key: travis-ci-tutorial
 ---
 ## Continuous Integration
 

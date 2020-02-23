@@ -5,6 +5,7 @@ description: How to build nginx with the source code
 # Add post description (optional)
 tags: [Nginx, Build]
 author: Jameslahm # Add name author (optional)
+key: how-to-build-nginx
 ---
 First, download the source code
 ```

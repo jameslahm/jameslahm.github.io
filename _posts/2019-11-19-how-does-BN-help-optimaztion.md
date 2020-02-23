@@ -7,6 +7,7 @@ tags: [Deep-learning, Paper]
 mathjax: true
 sharing: true
 author: Jameslahm # Add name author (optional)
+key: how-does-BN-help-optimaztion
 ---
 ## Batch Normalization
 

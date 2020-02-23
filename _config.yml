@@ -118,7 +118,7 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: gitalk # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: gitalk  # false (default), "disqus", "gitalk", "valine", "custom"
 
   ## Disqus
   disqus:
@@ -127,11 +127,13 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : 9e83c3cb7ecc433de935 # GitHub Application Client ID
-    clientSecret: 7306751c79cea153494fee7dd07321a70df2a499 # GitHub Application Client Secret
+    clientID    : 2d103b0c55ea6d139115 # GitHub Application Client ID
+    clientSecret: 828fd0ac30f49fd60c0704cb6efedd92a563c13b # GitHub Application Client Secret
     repository  : jameslahm.github.io # GitHub repo
     owner       : jameslahm # GitHub repo owner
-    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+    admin: 
+      - jameslahm
+      # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       # - your GitHub Id
 
   ## Valine
