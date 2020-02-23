@@ -1,5 +1,0 @@
-I"<p>First, download the source code</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://nginx.org/download/nginx-1.9.9.tar.gz
-</code></pre></div></div>
-<p>Attention:here, you can choose the version of nginx according to your need</p>
-:ET

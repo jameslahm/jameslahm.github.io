@@ -1,10 +1,8 @@
 ---
-layout: post
 title:  Travis CI Tutorial
 date:   2019-11-19 13:52:20 +0800
 description: Detailed Travis-CI tutorial
 # Add post description (optional)
-img: post-3.jpg # Add image post (optional)
 tags: [CI, Tutorial]
 author: Jameslahm # Add name author (optional)
 ---
@@ -13,26 +11,19 @@ author: Jameslahm # Add name author (optional)
 - The practice of merging in small code changes frequently 
 - The goal is to build healthier software by developing and testing in smaller increments.
 
----
-
 ### Travis-CI
 
 - *supports* your development process by automatically building and testing code changes, providing immediate feedback on the success of the change.
 - *automate* other parts of your development process by managing deployments and notifications.
-
----
 
 ### Core Concepts
 
 - *phase*:  the sequential steps of a job. For example, the `install` phase,  `script` phase,  `deploy` phase. 
 - *job*: an automated process that carries out a series of `phases` such as compiling your code, running tests.
 
----
-
 - *build*:  a group of `jobs`.  A *build* finishes when all of its `jobs` are finished 
 - *stage*: a group of `jobs`that run in parallel as part of a sequential build process composed of multiple `stages`. 
 
----
 
 ### Broken Build
 
@@ -40,16 +31,14 @@ author: Jameslahm # Add name author (optional)
 - *failed*:  a command in the `script` phase returned a non-zero exit code. 
 - *canceled*:   a user cancels the job before it completes. 
 
----
 
 ### Job Lifecycle
 
 - *install* : install any dependencies required
 - *script* : run the build script and the test script
 
-![](./../assets/img/tutorial/travis-ci/lifecycle.jpg)
+![](/assets/images/tutorial/travis-ci/lifecycle.jpg)
 
----
 
 ### Customizing  Phase
 
@@ -67,14 +56,10 @@ script:
 script: bundle exec rake build && bundle exec rake builddoc
 ```
 
----
-
 ### Build Matrix
 
 - *combine* a language-and-environment dependent set of configuration options to automatically create a matrix of all possible combinations 
 - *specify* the exact combination of configurations you want in `matrix.include` 
-
----
 
 ```yaml
 rvm:
@@ -88,8 +73,6 @@ env:
   - ISOLATED=false
 ```
 
----
-
 ```yaml
 jobs:
   include: //exclude
@@ -100,7 +83,6 @@ jobs:
     gemfile: gemfiles/Gemfile.rails-3.0.x
     env: ISOLATED=true
 ```
----
 
 ### Using different Programming Language
 
@@ -117,8 +99,6 @@ jobs:
         - python -c "print('Hi from Python!')"
 ```
 
----
-
 ### Build Stage
 
 A way to group jobs, and run jobs in each stage in parallel, but run one stage after another sequentially. 
@@ -133,8 +113,6 @@ include:
     script: ./deploy
 ```
 
----
-
 ### Specifying Stage Oder
 
 specify the order for stages in the section stages
@@ -146,8 +124,6 @@ stages:
   - deploy
 ```
 
----
-
 ### Conditional Builds, Stages and Jobs
 
 ```yaml
@@ -158,8 +134,6 @@ stages:
     if: branch = master
 ```
 
----
-
 ## Get Start
 
 - *Go* to [Travis-ci.com](https://travis-ci.com/) and [*Sign up with GitHub*](https://travis-ci.com/signin).  
@@ -167,7 +141,6 @@ stages:
 - Click the green *Activate* button and select the repositories you want to use with Travis CI. 
 - Add a `.travis.yml` file to your repository, git commit and push to trigger a Travis CI build.
 
----
 
 ### Build Specific Branched
 
@@ -187,8 +160,6 @@ branches:
   - stable
 ```
 
----
-
 ### Installing a Second Language
 
 In the `before_install ` stage of the build 
@@ -204,8 +175,6 @@ language: node_js
 before_install:
 - phpenv global 7.0
 ```
-
----
 
 ### Use docker
 
