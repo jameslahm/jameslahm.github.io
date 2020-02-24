@@ -2,12 +2,12 @@
 title: 阿里云配置 
 date: 2020-02-24 
 description:  
-tags: [‘linux’,'wsl'] 
+tags: [linux,aliyun] 
 author: Jameslahm 
-key: aliyun-and-wsl-configuration
+key: aliyun-configuration
 ---
 
-### 博客主题:pencil2:
+### 博客主题:pencil:
 
 上个周末把博客主题换了一下，之前也是`jekyll`主题的，但是可配置性不高，这次换一下博客主题也算是督促我好好学习、好好写写博客吧:joy:，毕竟之前博客搭好之后一直在划水。换博客主题时纠结了`vuepress`，不过想了想`vuepress`还是比较适合写文档，以后应该是这个主题写博客，`vuepress`写文档，希望不要划水:fist:。
 
