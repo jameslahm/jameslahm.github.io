@@ -40,9 +40,9 @@ title: My Resume
 
 |Project|Description|
 |:--:|:--:|:--:|
-|[LabelMe](https://github/jameslahm/labelme)| A image annotation software for 2D or 3D images|
-|[volunteers-tsinghua](https://github/jameslahm/volunteers-tsinghua)|Mini-program used for the management of volunteer activities in tsinghua|
-|[computation-graph](https://github/jameslahm/computation-graph)|A simple & scalable neural network framework|
+|[LabelMe](https://github.com/jameslahm/labelme)| A image annotation software for 2D or 3D images|
+|[volunteers-tsinghua](https://github.com/jameslahm/volunteers-tsinghua)|Mini-program used for the management of volunteer activities in tsinghua|
+|[computation-graph](https://github.com/jameslahm/computation-graph)|A simple & scalable neural network framework|
 
 
 
