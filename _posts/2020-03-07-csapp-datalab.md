@@ -15,7 +15,7 @@ mathjax: true
 
 1. `bitAnd`:
 
-   Similar to $A \cap B=-(-A \cup -B)$, $\sim (\sim x | \sim y)=x\&y$
+   Similar to $A \cap B=-(-A \cup -B), \sim (\sim x | \sim y)=x\&y$
 
 2. `getByte`:
 
