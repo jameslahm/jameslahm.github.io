@@ -1,3 +1,17 @@
+---
+title:  Encrypt Algorithm
+date:   2020-03-29 15:20:20 +0800
+description: Common Encrypt Algorithm
+# Add post description (optional)
+tags: [Encrypt]
+author: Jameslahm # Add name author (optional)
+key: encrypt-algorithm
+---
+
+
+
+
+
 #### 分类加密算法
 
 - 摘要算法

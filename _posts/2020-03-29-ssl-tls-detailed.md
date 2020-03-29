@@ -1,10 +1,22 @@
-### 作用
+---
+title:  SSL/TLS Introduction
+date:   2020-03-29 15:45:20 +0800
+description: SSL-TLS detailed introduction
+# Add post description (optional)
+tags: [Network]
+author: Jameslahm # Add name author (optional)
+key: ssl-tls
+---
+
+
+
+#### 作用
 
 HTTPS 建立于SSL/TLS之上，用于保证通信数据的加密
 
 
 
-### 握手过程
+#### 握手过程
 
 - `Client Hello`
 
@@ -34,7 +46,7 @@ HTTPS 建立于SSL/TLS之上，用于保证通信数据的加密
 
 
 
-### 会话复用
+#### 会话复用
 
 服务端可以在握手过程中给客户端发送`Session ID`，后续握手时可直接复用
 
