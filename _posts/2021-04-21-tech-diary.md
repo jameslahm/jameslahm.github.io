@@ -1,6 +1,6 @@
 ---
 title:  Tech Diary 04-21
-date:   2121-04-21 00:00:21 +0800
+date:   2021-04-21 00:00:21 +0800
 description: Tech Diary 04-21
 # Add post description (optional)
 tags: [TechDiary]
