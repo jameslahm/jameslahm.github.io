@@ -26,6 +26,4 @@ titles:
 lang: en
 ---
 
-I'm a student majoring in software engineering as Tsinghua University, meanwhile minoring in statistics. I am fond of coding and developing various softwares or library, though I am not so good at that now. However, I'm going to keep working hard to make progress :muscle:. 
-
-This is my [resume](/resume).
+[My Resume](/resume.pdf)
