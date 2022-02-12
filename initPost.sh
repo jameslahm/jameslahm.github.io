@@ -5,20 +5,20 @@ filename="$(date +%Y-%m-%d)-$1.md"
 index=0
 tags=""
 for i in $@
-do 
+do
     if [ $index -gt 1 ]
-    then 
+    then
         if [ -z "$tags" ]
         then
             tags="$i"
         else
             tags="$tags,$i"
         fi
-    fi 
+    fi
     index=$((index+1))
 done
 
-touch "$filename"
+touch _posts/"$filename"
 echo "---" >> $filename
 echo "title: $1 " >> $filename
 echo "date: $(date +%Y-%m-%d) " >> $filename
